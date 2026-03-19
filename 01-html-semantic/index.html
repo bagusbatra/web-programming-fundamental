@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- Menentukan bahwa dokumen ini adalah HTML5 -->
+<html lang="id"> <!-- Root HTML, menggunakan bahasa Indonesia -->
+    <head>
+        <meta charset="UTF-8"> <!-- Encoding karakter (agar support huruf/emoji) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Agar responsive di HP -->
+
+        <!-- SEO Basic -->
+        <meta name="description" content="Landing page belajar web programming modern"> <!-- Deskripsi website -->
+        <meta name="keywords" content="html, css, javascript, belajar web"> <!-- Kata kunci -->
+        <meta name="author" content="Your Name"> <!-- Nama pembuat -->
+
+        <title>Belajar Web Modern</title> <!-- Judul halaman (muncul di tab browser) -->
+    </head>
+    <body>
+
+        <!-- HEADER: Bagian atas website (judul & deskripsi) -->
+        <header>
+            <h1>Belajar Web Programming</h1> <!-- Judul utama -->
+            <p>Mulai dari dasar sampai siap kerja 🚀</p> <!-- Deskripsi singkat -->
+        </header>
+
+        <!-- NAVIGATION: Menu navigasi -->
+        <nav>
+            <a href="#home">Home</a> <!-- Link ke section home -->
+            <a href="#about">About</a> <!-- Link ke section about -->
+            <a href="#contact">Contact</a> <!-- Link ke section contact -->
+        </nav>
+
+        <!-- MAIN: Konten utama website -->
+        <main id="home">
+
+            <!-- SECTION: Bagian materi -->
+            <section>
+                <h2>Apa yang Akan Dipelajari?</h2> <!-- Judul section -->
+
+                <!-- ARTICLE: Konten mandiri -->
+                <article>
+                    <h3>HTML Semantic</h3> <!-- Sub judul -->
+                    <p>Belajar struktur HTML yang benar dan SEO friendly.</p> <!-- Deskripsi -->
+                </article>
+
+                <!-- ARTICLE -->
+                <article>
+                    <h3>CSS Modern</h3>
+                    <p>Membuat tampilan yang rapi dan responsive.</p>
+                </article>
+
+                <!-- ARTICLE -->
+                <article>
+                    <h3>JavaScript</h3>
+                    <p>Membuat website interaktif dan dinamis.</p>
+                </article>
+            </section>
+
+            <!-- SECTION ABOUT -->
+            <section id="about">
+                <h2>Tentang Kami</h2> <!-- Judul -->
+                <p>Kami membantu kamu belajar web programming dengan cara yang mudah dan praktis.</p> <!-- Isi -->
+            </section>
+
+            <!-- SECTION IMAGE -->
+            <section>
+                <h2>Contoh Gambar</h2> <!-- Judul -->
+                <img src="../assets/images/sample.jpg" alt="Belajar coding" width="300"> <!-- Gambar dengan alt -->
+            </section>
+
+            <!-- SECTION CONTACT (FORM) -->
+            <section id="contact">
+                <h2>Contact</h2> <!-- Judul -->
+
+                <!-- FORM: Input dari user -->
+                <form>
+                    <!-- Label untuk input nama -->
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" placeholder="Masukkan nama" required> <!-- Input nama -->
+
+                    <br><br> <!-- Spasi -->
+
+                    <!-- Label untuk email -->
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" placeholder="Masukkan email" required> <!-- Input email -->
+
+                    <br><br> <!-- Spasi -->
+
+                    <button type="submit">Kirim</button> <!-- Tombol submit -->
+                </form>
+            </section>
+
+        </main>
+
+        <!-- FOOTER: Bagian bawah website -->
+        <footer>
+            <p>© 2026 Belajar Web Programming</p> <!-- Copyright -->
+        </footer>
+
+    </body>
+</html>
