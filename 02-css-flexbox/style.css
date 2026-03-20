@@ -1,0 +1,99 @@
+/* =========================
+   RESET CSS (WAJIB)
+   ========================= */
+
+/* Menghapus margin & padding default browser */
+* {
+    margin: 0; /* Menghilangkan jarak luar bawaan */
+    padding: 0; /* Menghilangkan jarak dalam bawaan */
+    box-sizing: border-box; /* Agar width & height lebih mudah dikontrol */
+}
+
+/* Mengatur font dasar halaman */
+body {
+    font-family: Arial, sans-serif; /* Jenis font */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+    display: flex; /* Mengaktifkan Flexbox */
+    justify-content: space-between; /* Membuat jarak antara logo & menu */
+    align-items: center; /* Membuat elemen sejajar secara vertikal */
+    
+    padding: 20px; /* Memberi ruang di dalam navbar */
+    background-color: #333; /* Warna background */
+    color: white; /* Warna teks */
+}
+
+/* Logo website */
+.logo {
+    font-size: 24px; /* Ukuran teks */
+    font-weight: bold; /* Membuat teks tebal */
+}
+
+/* Container untuk link navigasi */
+.nav-links {
+    display: flex; /* Agar menu sejajar horizontal */
+    gap: 20px; /* Jarak antar link */
+}
+
+/* Styling link */
+.nav-links a {
+    color: white; /* Warna teks */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+/* Efek saat hover */
+.nav-links a:hover {
+    text-decoration: underline; /* Memberi garis bawah saat disentuh */
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    text-align: center; /* Teks rata tengah */
+    padding: 40px 20px; /* Jarak dalam atas-bawah & kiri-kanan */
+    background-color: #f4f4f4; /* Warna background */
+}
+
+/* =========================
+   CONTENT / CARD CONTAINER
+   ========================= */
+
+.container {
+    display: flex; /* Mengaktifkan Flexbox */
+    gap: 20px; /* Jarak antar card */
+    padding: 20px; /* Jarak dalam */
+
+    justify-content: center; /* Card berada di tengah secara horizontal */
+}
+
+/* =========================
+   CARD
+   ========================= */
+
+.card {
+    background-color: #e3e3e3; /* Warna background card */
+    padding: 20px; /* Jarak dalam */
+    border-radius: 10px; /* Membuat sudut melengkung */
+
+    flex: 1; /* Semua card memiliki ukuran sama */
+    text-align: center; /* Isi rata tengah */
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    text-align: center; /* Teks rata tengah */
+    padding: 20px; /* Jarak dalam */
+    background-color: #333; /* Warna background */
+    color: white; /* Warna teks */
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html> <!-- Menentukan dokumen HTML5 -->
+<html lang="id"> <!-- Root HTML -->
+<head>
+    <meta charset="UTF-8"> <!-- Encoding karakter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+
+    <title>JavaScript DOM</title> <!-- Judul halaman -->
+
+    <!-- CSS (reuse dari sebelumnya boleh) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+    <header class="section text-center">
+        <h1 id="title">Belajar JavaScript DOM</h1> <!-- Akan diubah dengan JS -->
+        <p>Website mulai interaktif 🚀</p>
+    </header>
+
+    <!-- =========================
+         BUTTON INTERACTION
+         ========================= -->
+    <section class="section text-center">
+
+        <h2>Interaksi Button</h2>
+
+        <!-- Button ubah teks -->
+        <button class="btn" id="btn-text">Ubah Teks</button>
+
+        <!-- Button ubah warna -->
+        <button class="btn" id="btn-color">Ubah Warna Background</button>
+
+        <!-- Button toggle -->
+        <button class="btn" id="btn-toggle">Toggle Deskripsi</button>
+
+        <!-- Target teks -->
+        <p id="description">Ini adalah teks yang akan berubah</p>
+
+    </section>
+
+    <!-- =========================
+         CARD INTERACTION
+         ========================= -->
+    <section class="section">
+
+        <h2 class="text-center">Klik Card</h2>
+
+        <div class="container">
+
+            <!-- CARD 1 -->
+            <div class="card">
+                <h3>Card 1</h3>
+                <p>Klik untuk ubah warna</p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>Klik untuk ubah warna</p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card">
+                <h3>Card 3</h3>
+                <p>Klik untuk ubah warna</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         INPUT INTERACTION
+         ========================= -->
+    <section class="section text-center">
+
+        <h2>Input Interaktif</h2>
+
+        <!-- Input nama -->
+        <input type="text" id="input-nama" placeholder="Masukkan nama">
+
+        <!-- Button tampilkan -->
+        <button class="btn" id="btn-show">Tampilkan</button>
+
+        <!-- Output -->
+        <p id="output"></p>
+
+    </section>
+
+    <!-- =========================
+         DARK MODE
+         ========================= -->
+    <section class="section text-center">
+
+        <h2>Dark Mode</h2>
+
+        <!-- Toggle dark mode -->
+        <button class="btn" id="btn-dark">Aktifkan Dark Mode</button>
+
+    </section>
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <footer class="section text-center">
+        <p>© 2026 JavaScript DOM</p>
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+         ========================= -->
+    <script src="script.js"></script> <!-- Hubungkan JS -->
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!-- Menentukan dokumen HTML5 -->
+<html lang="id"> <!-- Root HTML -->
+<head>
+    <meta charset="UTF-8"> <!-- Encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+
+    <title>Katalog Produk</title> <!-- Judul halaman -->
+
+    <!-- Hubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+    <header class="section text-center">
+        <h1>Katalog Produk</h1> <!-- Judul utama -->
+        <p>Mini Project JavaScript 🚀</p>
+    </header>
+
+    <!-- =========================
+         TAMBAH PRODUK (LOKAL)
+         ========================= -->
+    <section class="section text-center">
+
+        <h2>Tambah Produk</h2>
+
+        <!-- Input nama -->
+        <input type="text" id="input-nama" placeholder="Nama produk">
+
+        <!-- Input harga -->
+        <input type="number" id="input-harga" placeholder="Harga">
+
+        <!-- Tombol tambah -->
+        <button class="btn" id="btn-add">Tambah</button>
+
+    </section>
+
+    <!-- =========================
+         FILTER PRODUK
+         ========================= -->
+    <section class="section text-center">
+
+        <h2>Filter Produk</h2>
+
+        <!-- Semua -->
+        <button class="btn" id="btn-all">Semua</button>
+
+        <!-- Murah -->
+        <button class="btn" id="btn-cheap">Harga < 5jt</button>
+
+        <!-- Mahal -->
+        <button class="btn" id="btn-expensive">Harga ≥ 5jt</button>
+
+    </section>
+
+    <!-- =========================
+         STATUS
+         ========================= -->
+    <section class="section text-center">
+
+        <!-- Loading / Error -->
+        <p id="status"></p>
+
+    </section>
+
+    <!-- =========================
+         PRODUK DARI API
+         ========================= -->
+    <section class="section">
+
+        <h2 class="text-center">Produk dari API</h2>
+
+        <!-- Data API -->
+        <div class="container" id="api-products"></div>
+
+    </section>
+
+    <!-- =========================
+         PRODUK LOKAL
+         ========================= -->
+    <section class="section">
+
+        <h2 class="text-center">Produk Kamu</h2>
+
+        <!-- Data lokal -->
+        <div class="container" id="local-products"></div>
+
+    </section>
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <footer class="section text-center">
+        <p>© 2026 Mini Project</p>
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+         ========================= -->
+    <script src="script.js"></script> <!-- Hubungkan JS -->
+
+</body>
+</html>

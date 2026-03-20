@@ -1,0 +1,173 @@
+/* =========================
+   RESET CSS (WAJIB)
+   ========================= */
+
+/* Menghapus default margin & padding browser */
+* {
+    margin: 0; /* Menghilangkan jarak luar bawaan */
+    padding: 0; /* Menghilangkan jarak dalam bawaan */
+    box-sizing: border-box; /* Agar ukuran elemen lebih konsisten */
+}
+
+/* =========================
+   GLOBAL STYLE
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif; /* Jenis font */
+    line-height: 1.6; /* Jarak antar baris */
+    background-color: #f5f5f5; /* Warna background */
+}
+
+/* =========================
+   LAYOUT (STRUKTUR)
+   ========================= */
+
+/* Section sebagai pembungkus utama */
+.section {
+    padding: 40px 20px; /* Jarak dalam (atas-bawah & kiri-kanan) */
+}
+
+/* Container untuk flex layout */
+.container {
+    display: flex; /* Mengaktifkan flexbox */
+    gap: 20px; /* Jarak antar elemen */
+    flex-wrap: wrap; /* Agar turun ke baris berikutnya */
+    justify-content: center; /* Posisi di tengah horizontal */
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Logo kiri, menu kanan */
+    align-items: center; /* Rata tengah vertical */
+
+    padding: 20px; /* Jarak dalam */
+    background-color: #333; /* Background */
+    color: white; /* Warna teks */
+}
+
+/* Logo */
+.logo {
+    font-size: 24px; /* Ukuran teks */
+    font-weight: bold; /* Tebal */
+}
+
+/* Menu */
+.nav-links {
+    display: flex; /* Flexbox */
+    gap: 20px; /* Jarak antar menu */
+}
+
+/* Link */
+.nav-links a {
+    text-decoration: none; /* Hilangkan underline */
+    color: white; /* Warna teks */
+}
+
+/* Hover */
+.nav-links a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* =========================
+   COMPONENT: CARD
+   ========================= */
+
+.card {
+    background-color: #ffffff; /* Warna background */
+    padding: 20px; /* Jarak dalam */
+    border-radius: 12px; /* Sudut melengkung */
+    
+    width: 300px; /* Lebar card */
+    text-align: center; /* Teks rata tengah */
+
+    transition: 0.3s; /* Animasi halus saat hover */
+}
+
+/* Hover effect card */
+.card:hover {
+    transform: translateY(-5px); /* Naik sedikit */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Bayangan */
+}
+
+/* Gambar dalam card */
+.card img {
+    width: 100%; /* Lebar penuh */
+    border-radius: 10px; /* Sudut melengkung */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+/* =========================
+   COMPONENT: BUTTON
+   ========================= */
+
+.btn {
+    display: inline-block; /* Agar bisa diatur padding */
+    padding: 10px 20px; /* Jarak dalam */
+    margin-top: 10px; /* Jarak atas */
+
+    background-color: #007bff; /* Warna background */
+    color: white; /* Warna teks */
+
+    border: none; /* Hilangkan border */
+    border-radius: 8px; /* Sudut melengkung */
+    cursor: pointer; /* Cursor pointer saat hover */
+
+    transition: 0.3s; /* Animasi halus */
+}
+
+/* Hover button */
+.btn:hover {
+    background-color: #0056b3; /* Warna lebih gelap */
+}
+
+/* =========================
+   UTILITY CLASS
+   ========================= */
+
+/* Teks rata tengah */
+.text-center {
+    text-align: center;
+}
+
+/* Margin top */
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #333; /* Background */
+    color: white; /* Warna teks */
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Navbar jadi ke bawah */
+    .navbar {
+        flex-direction: column; /* Dari horizontal ke vertical */
+        gap: 10px; /* Jarak antar elemen */
+    }
+
+    /* Menu ke bawah */
+    .nav-links {
+        flex-direction: column; /* Menu jadi stack */
+        align-items: center; /* Posisi tengah */
+    }
+
+    /* Card full width */
+    .card {
+        width: 100%; /* Lebar penuh */
+    }
+}

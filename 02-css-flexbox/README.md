@@ -52,15 +52,15 @@ Kenapa?
 
 Selector digunakan untuk memilih elemen HTML.
 ```css
-    h1 {
+    h1 { /* tag */
         color: blue;
     }
 
-    .card {
+    .card { /* class */
         background: #eee;
     }
 
-    #judul {
+    #judul { /* ID */
         color: red;
     }
 ```

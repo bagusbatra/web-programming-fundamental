@@ -1,0 +1,147 @@
+/* =========================
+   RESET CSS
+   ========================= */
+
+/* Menghapus margin & padding bawaan browser */
+* {
+    margin: 0; /* Hilangkan jarak luar default */
+    padding: 0; /* Hilangkan jarak dalam default */
+    box-sizing: border-box; /* Agar ukuran elemen lebih mudah dikontrol */
+}
+
+/* =========================
+   GLOBAL STYLE
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif; /* Jenis font */
+    line-height: 1.6; /* Jarak antar baris */
+    background-color: #f4f4f4; /* Warna background */
+    color: #333; /* Warna teks */
+    transition: 0.3s; /* Animasi halus (dipakai untuk dark mode nanti) */
+}
+
+/* =========================
+   LAYOUT
+   ========================= */
+
+.section {
+    padding: 40px 20px; /* Jarak dalam */
+}
+
+/* Container flex untuk card */
+.container {
+    display: flex; /* Aktifkan flexbox */
+    gap: 20px; /* Jarak antar card */
+    flex-wrap: wrap; /* Agar turun ke bawah jika penuh */
+    justify-content: center; /* Posisi di tengah */
+}
+
+/* =========================
+   TEXT & UTILITY
+   ========================= */
+
+/* Rata tengah */
+.text-center {
+    text-align: center;
+}
+
+/* =========================
+   BUTTON (REUSABLE)
+   ========================= */
+
+.btn {
+    display: inline-block; /* Agar bisa pakai padding */
+    padding: 10px 20px; /* Jarak dalam */
+    margin: 10px 5px; /* Jarak antar button */
+
+    background-color: #007bff; /* Warna background */
+    color: white; /* Warna teks */
+
+    border: none; /* Hilangkan border */
+    border-radius: 8px; /* Sudut melengkung */
+    cursor: pointer; /* Cursor pointer */
+
+    transition: 0.3s; /* Animasi halus */
+}
+
+/* Hover button */
+.btn:hover {
+    background-color: #0056b3; /* Warna lebih gelap */
+    transform: scale(1.05); /* Sedikit membesar */
+}
+
+/* =========================
+   CARD
+   ========================= */
+
+.card {
+    background-color: white; /* Warna background */
+    padding: 20px; /* Jarak dalam */
+    border-radius: 10px; /* Sudut melengkung */
+    width: 250px; /* Lebar card */
+
+    text-align: center; /* Teks rata tengah */
+    cursor: pointer; /* Bisa diklik */
+
+    transition: 0.3s; /* Animasi halus */
+}
+
+/* Hover card */
+.card:hover {
+    transform: translateY(-5px); /* Naik sedikit */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Bayangan */
+}
+
+/* =========================
+   INPUT
+   ========================= */
+
+input {
+    padding: 10px; /* Jarak dalam */
+    border-radius: 6px; /* Sudut melengkung */
+    border: 1px solid #ccc; /* Border tipis */
+    margin-top: 10px; /* Jarak atas */
+}
+
+/* =========================
+   TEXT OUTPUT
+   ========================= */
+
+#description,
+#output {
+    margin-top: 15px; /* Jarak atas */
+    font-weight: bold; /* Teks tebal */
+}
+
+/* =========================
+   DARK MODE (AKAN DIPAKAI JS)
+   ========================= */
+
+/* Saat body memiliki class "dark" */
+body.dark {
+    background-color: #121212; /* Background gelap */
+    color: white; /* Teks putih */
+}
+
+/* Card saat dark mode */
+body.dark .card {
+    background-color: #1e1e1e; /* Card gelap */
+}
+
+/* Button saat dark mode */
+body.dark .btn {
+    background-color: #444; /* Button lebih gelap */
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Card full width di HP */
+    .card {
+        width: 100%;
+    }
+}

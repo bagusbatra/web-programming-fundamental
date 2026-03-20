@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- Menentukan dokumen HTML5 -->
+<html lang="id"> <!-- Root HTML -->
+<head>
+    <meta charset="UTF-8"> <!-- Encoding karakter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+
+    <title>Fetch API</title> <!-- Judul halaman -->
+
+    <!-- Hubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+    <header class="section text-center">
+        <h1>Data User (API)</h1> <!-- Judul -->
+        <p>Mengambil data dari internet 🚀</p>
+    </header>
+
+    <!-- =========================
+         BUTTON LOAD DATA
+         ========================= -->
+    <section class="section text-center">
+
+        <h2>Ambil Data</h2>
+
+        <!-- Tombol untuk fetch data -->
+        <button class="btn" id="btn-load">
+            Load Data
+        </button>
+
+    </section>
+
+    <!-- =========================
+         STATUS (LOADING / ERROR)
+         ========================= -->
+    <section class="section text-center">
+
+        <!-- Status loading / error akan ditampilkan di sini -->
+        <p id="status"></p>
+
+    </section>
+
+    <!-- =========================
+         CONTAINER DATA USER
+         ========================= -->
+    <section class="section">
+
+        <!-- Data dari API akan dimasukkan ke sini -->
+        <div class="container" id="user-list"></div>
+
+    </section>
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <footer class="section text-center">
+        <p>© 2026 Fetch API</p>
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+         ========================= -->
+    <script src="script.js"></script> <!-- Hubungkan JS -->
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* =========================
+   RESET CSS
+   ========================= */
+
+/* Menghapus default margin & padding browser */
+* {
+    margin: 0; /* Hilangkan jarak luar */
+    padding: 0; /* Hilangkan jarak dalam */
+    box-sizing: border-box; /* Ukuran lebih konsisten */
+}
+
+/* =========================
+   GLOBAL STYLE
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif; /* Jenis font */
+    line-height: 1.6; /* Jarak antar teks */
+    background-color: #f4f4f4; /* Warna background */
+    color: #333; /* Warna teks */
+}
+
+/* =========================
+   LAYOUT
+   ========================= */
+
+/* Section utama */
+.section {
+    padding: 40px 20px; /* Jarak dalam */
+}
+
+/* Container produk */
+.container {
+    display: flex; /* Flexbox */
+    flex-wrap: wrap; /* Agar turun jika penuh */
+    gap: 20px; /* Jarak antar card */
+    justify-content: center; /* Posisi tengah */
+}
+
+/* =========================
+   TEXT & UTILITY
+   ========================= */
+
+/* Teks rata tengah */
+.text-center {
+    text-align: center;
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.btn {
+    display: inline-block; /* Agar padding bisa diterapkan */
+    padding: 10px 20px; /* Jarak dalam */
+    margin: 10px 5px; /* Jarak antar tombol */
+
+    background-color: #007bff; /* Warna background */
+    color: white; /* Warna teks */
+
+    border: none; /* Hilangkan border */
+    border-radius: 8px; /* Sudut melengkung */
+    cursor: pointer; /* Pointer saat hover */
+
+    transition: 0.3s; /* Animasi halus */
+}
+
+/* Hover button */
+.btn:hover {
+    background-color: #0056b3; /* Warna lebih gelap */
+    transform: scale(1.05); /* Sedikit membesar */
+}
+
+/* =========================
+   CARD PRODUK
+   ========================= */
+
+.card {
+    background-color: white; /* Background */
+    padding: 20px; /* Jarak dalam */
+    border-radius: 12px; /* Sudut melengkung */
+
+    width: 250px; /* Lebar card */
+    text-align: center; /* Teks rata tengah */
+
+    transition: 0.3s; /* Animasi */
+}
+
+/* Hover card */
+.card:hover {
+    transform: translateY(-5px); /* Naik sedikit */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Bayangan */
+}
+
+/* Judul produk */
+.card h3 {
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+/* Harga produk */
+.card p {
+    margin-bottom: 10px; /* Jarak bawah */
+    font-weight: bold; /* Tebal */
+}
+
+/* =========================
+   INPUT
+   ========================= */
+
+input {
+    padding: 10px; /* Jarak dalam */
+    margin: 10px 5px; /* Jarak antar input */
+    border-radius: 6px; /* Sudut melengkung */
+    border: 1px solid #ccc; /* Border tipis */
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #333; /* Background */
+    color: white; /* Warna teks */
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Card full di HP */
+    .card {
+        width: 100%; /* Lebar penuh */
+    }
+}

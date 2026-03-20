@@ -1,0 +1,197 @@
+/* =========================
+   RESET CSS (WAJIB)
+   ========================= */
+
+/* Menghapus margin & padding default browser */
+* {
+    margin: 0; /* Menghilangkan jarak luar bawaan */
+    padding: 0; /* Menghilangkan jarak dalam bawaan */
+    box-sizing: border-box; /* Agar padding & border tidak menambah ukuran elemen */
+}
+
+/* Styling dasar body */
+body {
+    font-family: Arial, sans-serif; /* Jenis font */
+    line-height: 1.6; /* Jarak antar baris */
+    background-color: #f9f9f9; /* Warna background */
+}
+
+/* =========================
+   NAVBAR (MOBILE FIRST)
+   ========================= */
+
+.navbar {
+    display: flex; /* Mengaktifkan flexbox */
+    flex-direction: column; /* Default mobile: ke bawah */
+    align-items: center; /* Posisi tengah horizontal */
+    gap: 10px; /* Jarak antar elemen */
+
+    padding: 15px; /* Jarak dalam */
+    background-color: #333; /* Warna background */
+    color: white; /* Warna teks */
+}
+
+/* Logo */
+.logo {
+    font-size: 22px; /* Ukuran teks */
+    font-weight: bold; /* Tebal */
+}
+
+/* Container menu */
+.nav-links {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Mobile: menu ke bawah */
+    gap: 10px; /* Jarak antar link */
+}
+
+/* Link menu */
+.nav-links a {
+    color: white; /* Warna teks */
+    text-decoration: none; /* Hilangkan garis bawah */
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    text-align: center; /* Teks rata tengah */
+    padding: 30px 15px; /* Jarak dalam */
+    background-color: #eaeaea; /* Background */
+}
+
+/* =========================
+   CONTENT (CARD)
+   ========================= */
+
+.container {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Mobile: card ke bawah */
+    gap: 15px; /* Jarak antar card */
+
+    padding: 15px; /* Jarak dalam */
+}
+
+/* Card */
+.card {
+    background-color: #ffffff; /* Warna background */
+    padding: 20px; /* Jarak dalam */
+    border-radius: 10px; /* Sudut melengkung */
+    text-align: center; /* Teks rata tengah */
+}
+
+/* =========================
+   PROJECT SECTION
+   ========================= */
+
+.project-container {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Mobile: ke bawah */
+    gap: 15px; /* Jarak antar project */
+
+    padding: 15px;
+}
+
+/* Card project */
+.project-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Gambar project */
+.project-card img {
+    width: 100%; /* Lebar penuh */
+    border-radius: 10px; /* Sudut melengkung */
+}
+
+/* =========================
+   HOBBIES SECTION
+   ========================= */
+
+.hobbies-container {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Mobile: ke bawah */
+    gap: 15px;
+
+    padding: 15px;
+}
+
+/* Card hobby */
+.hobby-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Gambar hobby */
+.hobby-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    text-align: center; /* Teks rata tengah */
+    padding: 20px; /* Jarak dalam */
+    background-color: #333; /* Background */
+    color: white; /* Warna teks */
+}
+
+/* =========================
+   RESPONSIVE (TABLET & DESKTOP)
+   ========================= */
+
+/* Jika layar >= 768px */
+@media (min-width: 768px) {
+
+    /* NAVBAR jadi horizontal */
+    .navbar {
+        flex-direction: row; /* Dari kolom ke baris */
+        justify-content: space-between; /* Logo kiri, menu kanan */
+    }
+
+    .nav-links {
+        flex-direction: row; /* Menu jadi sejajar */
+    }
+
+    /* CARD jadi 3 kolom */
+    .container {
+        flex-direction: row; /* Sejajar */
+        flex-wrap: wrap; /* Bisa turun ke baris berikutnya */
+    }
+
+    .card {
+        flex: 1 1 calc(33.333% - 15px); 
+        /* Lebar 1/3, dikurangi gap */
+    }
+
+    /* PROJECT jadi 2 kolom */
+    .project-container {
+        flex-direction: row;
+    }
+
+    .project-card {
+        flex: 1; /* Bagi 2 sama rata */
+    }
+
+    /* HOBBIES jadi 5 sejajar */
+    .hobbies-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hobby-card {
+        flex: 1 1 calc(20% - 15px); 
+        /* 5 kolom */
+    }
+}

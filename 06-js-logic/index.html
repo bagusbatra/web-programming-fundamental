@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- Menentukan dokumen HTML5 -->
+<html lang="id"> <!-- Root HTML -->
+<head>
+    <meta charset="UTF-8"> <!-- Encoding karakter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+
+    <title>JavaScript Logic</title> <!-- Judul halaman -->
+
+    <!-- Hubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+    <header class="section text-center">
+        <h1>Daftar Produk</h1> <!-- Judul -->
+        <p>Belajar menampilkan data dengan JavaScript 🚀</p>
+    </header>
+
+    <!-- =========================
+         FILTER BUTTON
+         ========================= -->
+    <section class="section text-center">
+
+        <h2>Filter Produk</h2>
+
+        <!-- Tampilkan semua -->
+        <button class="btn" id="btn-all">Semua</button>
+
+        <!-- Filter harga murah -->
+        <button class="btn" id="btn-cheap">Harga < 5jt</button>
+
+        <!-- Filter harga mahal -->
+        <button class="btn" id="btn-expensive">Harga ≥ 5jt</button>
+
+    </section>
+
+    <!-- =========================
+         CONTAINER PRODUK
+         ========================= -->
+    <section class="section">
+
+        <!-- Data produk akan dimasukkan lewat JavaScript -->
+        <div class="container" id="product-list"></div>
+
+    </section>
+
+    <!-- =========================
+         TAMBAH PRODUK (INPUT)
+         ========================= -->
+    <section class="section text-center">
+
+        <h2>Tambah Produk</h2>
+
+        <!-- Input nama produk -->
+        <input type="text" id="input-nama" placeholder="Nama produk">
+
+        <!-- Input harga -->
+        <input type="number" id="input-harga" placeholder="Harga">
+
+        <!-- Tombol tambah -->
+        <button class="btn" id="btn-add">Tambah</button>
+
+    </section>
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <footer class="section text-center">
+        <p>© 2026 JavaScript Logic</p>
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+         ========================= -->
+    <script src="script.js"></script> <!-- Hubungkan JS -->
+</body>
+</html>

@@ -75,7 +75,7 @@ Panduan cepat HTML untuk pemula sampai siap bikin project real 🚀
 
 ## 🖼️ Image
 ```html
-    <img src="assets/images/foto.jpg" alt="Deskripsi gambar">
+    <img src="assets/images/sample.jpg" alt="Deskripsi gambar">
 ```
 ⚠️ **Wajib pakai alt** untuk SEO & aksesibilitas
 
